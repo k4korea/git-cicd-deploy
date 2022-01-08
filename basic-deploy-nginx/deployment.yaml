@@ -14,7 +14,7 @@ spec:
         run: mynginx-one-depth
     spec:
       containers:
-      - image: nginx:1.10.3
+      - image: nginx:1.20.3
         name: mynginx-one-depth
         ports:
         - containerPort: 80
