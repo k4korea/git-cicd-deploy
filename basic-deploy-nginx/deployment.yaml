@@ -1,7 +1,7 @@
 ion: apps/v1
 kind: Deployment
 metadata:
-  name: mynginx
+  name: mynginx2
 spec:
   replicas: 1
   selector:
