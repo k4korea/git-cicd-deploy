@@ -7,8 +7,9 @@ spec:
   selector:
     app: {{ .Values.name }}
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 8080
-      nodePort: {{ .Values.nodePort }}
+  - port: 80
+    targetPort: 8080
+    nodePort: {{ .Values.nodePort }}
+    
+      
   
