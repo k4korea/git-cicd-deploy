@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mynginx2
+  name: mynginx-one-depth
 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      run: mynginx2
+      run: mynginx-one-depth
   template:
     metadata:
       labels:
-        run: mynginx2
+        run: mynginx-one-depth
     spec:
       containers:
       - image: nginx
-        name: mynginx2
+        name: mynginx-one-depth
         ports:
         - containerPort: 80

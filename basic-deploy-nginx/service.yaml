@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mynginx2
-  
+  name: mynginx-one-depth
+
 spec:
   ports:
   - port: 80
     protocol: TCP
     targetPort: 80
   selector:
-    run: mynginx2
+    run: mynginx-one-depth
