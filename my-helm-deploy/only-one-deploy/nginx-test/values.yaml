@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: love7310/virtlet
+  repository: love7310/myapp
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "2"
+  tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""
