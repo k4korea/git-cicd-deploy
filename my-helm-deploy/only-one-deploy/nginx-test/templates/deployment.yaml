@@ -31,21 +31,21 @@ spec:
           failureThreshold: 3
           httpGet:
             path: /
-            port: http
+            port: 8080
             scheme: HTTP
           periodSeconds: 10
           successThreshold: 1
           timeoutSeconds: 1
         name: virtlet-template
         ports:
-        - containerPort: 80
+        - containerPort: 8080
           name: http
           protocol: TCP
         readinessProbe:
           failureThreshold: 3
           httpGet:
             path: /
-            port: http
+            port: 8080
             scheme: HTTP
           periodSeconds: 10
           successThreshold: 1
@@ -93,21 +93,21 @@ spec:
           failureThreshold: 3
           httpGet:
             path: /
-            port: http
+            port: 8080
             scheme: HTTP
           periodSeconds: 10
           successThreshold: 1
           timeoutSeconds: 1
         name: virtlet-template
         ports:
-        - containerPort: 80
+        - containerPort: 8080
           name: http
           protocol: TCP
         readinessProbe:
           failureThreshold: 3
           httpGet:
             path: /
-            port: http
+            port: 8080
             scheme: HTTP
           periodSeconds: 10
           successThreshold: 1
