@@ -9,8 +9,7 @@ spec:
     targetPort: 8080    
   type: NodePort
   selector:
-    app.target: virtlet-template
-    release: {{ .Release.Name }}
+    app.target: virtlet-template    
 ---
 apiVersion: v1
 kind: Service
@@ -25,4 +24,4 @@ spec:
   type: NodePort
   selector:
     app.target: virtlet-template-preview 
-    release: {{ .Release.Name }}
+    
