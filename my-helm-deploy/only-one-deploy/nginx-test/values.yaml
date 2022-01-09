@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: love7310/virtlet  
-  tag: "latest"
+  repository: argoproj/rollouts-demo  
+  tag: "blue"
 
 
-  pre_repository: nginx
-  pre_tag: "latest"
+  pre_repository: argoproj/rollouts-demo
+  pre_tag: "green"
 
