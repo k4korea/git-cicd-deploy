@@ -9,6 +9,7 @@ spec:
     targetPort: 8080
     protocol: TCP
     name: http
+  type: NodePort
   selector:
     app: virtlet
     release: {{ .Release.Name }}
@@ -24,6 +25,7 @@ spec:
     targetPort: 8080
     protocol: TCP
     name: http
+  type: NodePort
   selector:
     app: virtlet-preview    
     release: {{ .Release.Name }}
