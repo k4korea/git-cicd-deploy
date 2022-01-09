@@ -24,6 +24,8 @@ spec:
     spec:
       containers:
       - image: "{{.Values.image.repository}}:{{.Values.image.tag}}"
+        ports:
+        - containerPort: 8080
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -85,6 +87,8 @@ spec:
       containers:
       - image: "{{.Values.image.pre_repository}}:{{.Values.image.pre_tag}}"
         imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
         livenessProbe:
           failureThreshold: 3
           httpGet:
