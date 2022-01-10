@@ -9,6 +9,7 @@ image:
   tag: "blue"
 
 
+
   pre_repository: argoproj/rollouts-demo
   pre_tag: "green"
 
